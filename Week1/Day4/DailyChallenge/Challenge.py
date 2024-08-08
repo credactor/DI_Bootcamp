@@ -22,3 +22,8 @@ for chr in text:
    else:
        output += " "
 print ('Secret message:',one_space(output))
+
+# The short solution:
+# matrix = ['7ii', 'Tsx', 'h%?', 'i #', 'sM ', '$a ', '#t%', '^r!']
+# alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+# print ('Secret message:',' '.join(''.join([matrix[i][j] if matrix[i][j] in alpha else " " for j in range(len(matrix[0])) for i in range(len(matrix))]).split()))
