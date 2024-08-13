@@ -1,7 +1,7 @@
 # Using the code above, implement the relevant methods and dunder methods which will output the results below.
 # Hint : When adding 2 currencies which don’t share the same label you should raise an error.
 
-class Currency:
+class Currency():
     def __init__(self, currency, amount):
         self.currency = currency
         self.amount = amount
