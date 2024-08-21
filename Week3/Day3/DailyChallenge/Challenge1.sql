@@ -27,3 +27,9 @@ VALUES ((SELECT id FROM customer where first_name = 'John'), true),
 
 SELECT customer.first_name FROM customer INNER JOIN profile
 ON customer.id = profile.customer_id WHERE profile.isLoggedIn = true;
+
+SELECT customer.first_name, profile.isLoggedIn FROM customer LEFT JOIN profile
+ON customer.id = profile.customer_id;
+
+SELECT count(*) FROM customer LEFT JOIN profile
+ON customer.id = profile.customer_id WHERE isLoggedIn = 'false' OR isLoggedIn is NULL;
