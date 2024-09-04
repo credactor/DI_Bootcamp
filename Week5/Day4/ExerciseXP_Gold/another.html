@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another HTML file</title>
+</head>
+<body>
+    <section></section>
+    <script>
+        const sect = document.getElementsByTagName("section")[0];        
+        p_url = location.search.substring(1);        
+        parameter = p_url.split("&");
+        text = "";
+        for (i in parameter) {
+            let j = parameter[i].split("=");
+            text += j[0] + "=" + j[1] + "; "
+        }
+        sect.textContent = text;
+    </script>
+</body>
+</html>
