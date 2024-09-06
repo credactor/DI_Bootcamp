@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="miniproject.css">
+    <title>Quote Generator</title>
+</head>
+<body>    
+    <section id="sect1">
+        <button id="generator">Generate Quote</button>
+        <button id="like" disabled>Like!</button>
+        <p id="quote"></p>
+        <p id="author"></p>
+    </section>
+    <section id="sect2">
+        <p>Number of characters in the quote (space included): <span id="numAll"></span></p>
+        <p>Number of characters in the quote (space NOT included): <span id="numChr"></span></p>
+        <p>Number of words in the quote: <span id="numWords"></span></p>
+        <p>Like: <span id="numLikes"></span></p>
+    </section>
+    <form id="form1" method="GET" action="miniproject.html">
+        <h2>New quote:</h2>
+        <p>Quote:  <input type="text" name="new_quote"></p>
+        <span>Author:  <input type="text" name="new_author"></span>
+        <span><button id="addnew" type="submit">Add New Quote</button></span>
+    </form>
+    <form id="form2" method="GET" action="miniproject.html">
+        <h2>Search quotes by the author</h2>
+        <input type="text" id="request">
+        <span><button id="search" type="submit">Search</button></span>
+        <h4>Quotes found: <span id="found"></span></h4>
+        <div id="arrows">
+            <button id="prev">&lt- Previous</button>
+            <button id="next">Next -&gt;</button>
+        </div>
+    </form>
+    <script src="miniproject.js"></script>
+</body>
+</html>

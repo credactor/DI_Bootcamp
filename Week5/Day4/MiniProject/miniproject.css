@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    background-color: lightseagreen;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#sect1 {
+    background-color: coral;
+}
+
+#sect2 {
+    background-color: rgb(90, 134, 175);
+    padding: 10px 20px 10px 20px;
+}
+
+#sect2 > p {
+    margin: 10px;
+}
+
+form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#form1 {
+    background-color: rgb(18, 143, 45);
+}
+
+#form2 {
+    background-color: rgb(189, 160, 34);
+}
+
+form > p, span {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+form > p > input {
+    margin-top: 0px;
+    width: 85%;
+}
+
+form > span > input {
+    margin-bottom: 20px;
+}
+
+form > input {
+    margin: 0px 20px 20px 20px;
+    width: 50%;
+}
+
+#generator {
+    font-size: large;
+    padding: 10px;
+    margin: 20px;
+}
+
+#like {
+    font-size: large;
+    padding: 5px;
+    margin: 20px 20px 20px 50px;
+    align-self: flex-end;
+}
+
+#addnew, #search, #prev, #next {
+    padding: 2px 10px;
+}
+
+#quote {
+    font-size: 2rem;
+    padding: 0px 20px 0px 20px;
+}
+
+#author {
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 0px 20px 10px 20px;
+}
+
+h2 {
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+h4 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#form2 > div {
+    text-align: center;
+}
+
+#form2 > div > button {
+padding: 2px 10px;
+margin: 10px;
+}
